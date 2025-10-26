@@ -4,7 +4,7 @@ from langchain_ollama.llms import OllamaLLM
 
 llm = LLM(
     model="llama3.2",
-    base_url="http://localhost:11500"
+    base_url="http://localhost:11500"   // Providing your localhost port to host it on you pc
 )
 
 from crewai.tools import tool
@@ -62,6 +62,7 @@ planner_expert = Agent(
 from datetime import datetime
 from crewai import Task
 
+//Just an example
 from_city= "India"
 destination_city = "Rome"
 date_from = "7th March 2025"
