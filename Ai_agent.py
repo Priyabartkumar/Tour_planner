@@ -235,7 +235,7 @@ planner_task = planner_task(
   date_from,
   date_to,
 )
-
+// Creating Application
 from crewai import Crew, Process
 crew = Crew(
     agents=[location_expert, guide_expert, planner_expert],
